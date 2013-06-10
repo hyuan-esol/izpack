@@ -1460,6 +1460,8 @@ public class CompilerConfig extends Thread
 
         }
 
+        // This corrects issues that could arise due to subfolders
+        Collections.sort(allDirList);
         for (String dirName : allDirList)
         {
             File tmp = new File(dirName);
